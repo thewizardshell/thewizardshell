@@ -9,9 +9,10 @@ I consider myself a highly responsible person with an innate ability to solve pr
 In the professional realm, I have oriented myself towards Front-End development, specializing in the use of React.js and Vite. My focus is on creating interactive, intuitive, and easily accessible web experiences for users, contributing to efficient and attractive navigation.
 
 Throughout my journey, I have demonstrated a notable ability to learn quickly, adapt to changing environments, and achieve challenging goals. My goal is to continue evolving in the field of web development, contributing my technical skills and results-oriented approach.
-## 🚀 Habilidades
+## 🚀 Skills
 
-### Skills
+### MyLanguages
+
 ```python
 class MyLenguajes:
     def __init__(self):
