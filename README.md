@@ -11,7 +11,7 @@ In the professional realm, I have oriented myself towards Front-End development,
 Throughout my journey, I have demonstrated a notable ability to learn quickly, adapt to changing environments, and achieve challenging goals. My goal is to continue evolving in the field of web development, contributing my technical skills and results-oriented approach.
 ## 🚀 Habilidades
 
-### MyLenguajes
+### Skills
 ```python
 class MyLenguajes:
     def __init__(self):
