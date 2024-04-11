@@ -17,7 +17,8 @@ Throughout my journey, I have demonstrated a notable ability to learn quickly, a
 class MyLenguajes:
     def __init__(self):
         self.languages =
-["Python",
+["Astro",
+"python",
 "C",
 "C++",
 "Java",
@@ -34,3 +35,5 @@ class MyLenguajes:
 
 my_languages = MyLenguajes()
 print(my_languages.get_languages())
+
+```
