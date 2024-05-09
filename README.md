@@ -51,31 +51,10 @@ I consider myself a highly responsible person with an innate ability to solve pr
 In the professional realm, I have oriented myself towards Front-End development, specializing in the use of React.js and Vite. My focus is on creating interactive, intuitive, and easily accessible web experiences for users, contributing to efficient and attractive navigation.
 
 Throughout my journey, I have demonstrated a notable ability to learn quickly, adapt to changing environments, and achieve challenging goals. My goal is to continue evolving in the field of web development, contributing my technical skills and results-oriented approach.
-## 🚀 Skills
+## 🚀 Contributions
 
-### MyLanguages
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=vicenteroa&radius=16&theme=react&area=true&order=5&hide_border=true&hide_title=true" height="300" alt="activity-graph graph"  />
+</div>
 
-```python
-class MyLenguajes:
-    def __init__(self):
-        self.languages =
-["Astro",
-"python",
-"C",
-"C++",
-"Java",
-"JavaScript",
-"HTML",
-"CSS",
-"React.js",
-"Node.js",
-"Electron.js",
-"Vite"]
-
-    def get_languages(self):
-        return self.languages
-
-my_languages = MyLenguajes()
-print(my_languages.get_languages())
-
-```
+###
