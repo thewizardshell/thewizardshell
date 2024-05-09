@@ -42,11 +42,6 @@
   </a>
 </div>
 
-###
-
-<img src="https://raw.githubusercontent.com/vicenteroa/vicenteroa/output/snake.svg" alt="Snake animation" />
-
-###
 ## 👨‍💻 About Me
 
 Hello! I'm Vicente Roa, a passionate Computer Science student at Andrés Bello University, currently in my final year. My academic journey has been focused on acquiring a solid knowledge in the field of computer science, and my commitment to excellence has led me to excel in my area of study.
