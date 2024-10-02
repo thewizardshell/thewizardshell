@@ -1,16 +1,10 @@
-
-
-
-
-###
+<br clear="both">
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=vicenteroa&locale=es&mode=weekly&theme=dark&hide_border=false&border_radius=5&date_format=M%20j%5B,%20Y%5D&order=3" height="220" alt="streak graph"  />
+  <img src="https://streak-stats.demolab.com?user=vicenteroa&locale=en&mode=weekly&theme=omni&hide_border=false&border_radius=5&date_format=%5BY.%5Dn.j&order=3" height="220" alt="streak graph"  />
 </div>
 
 ###
-
-<h1 align="center">Hi 🐉! My name is Vicente Roa</h1>
 
 <div align="center">
   <a href="https://www.linkedin.com/in/vicente-roa-81548b216/" target="_blank">
@@ -20,6 +14,10 @@
     <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="youtube logo"  />
   </a>
 </div>
+
+###
+
+<h1 align="center">Hi ! My name is Vicente Roa</h1>
 
 ###
 
@@ -38,15 +36,21 @@
 <div align="left">
   <img src="https://img.shields.io/badge/Neovim-57A143?logo=neovim&logoColor=black&style=for-the-badge" height="40" alt="neovim logo"  />
   <img width="12" />
+  <img src="https://cdn.simpleicons.org/vite/646CFF" height="40" alt="vite logo"  />
+  <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="nextjs logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
   <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" height="40" alt="electron logo"  />
+  <img width="12" />
   <img src="https://cdn.simpleicons.org/astro/FF5D01" height="40" alt="astro logo"  />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="40" alt="express logo"  />
-  <img width="12" />
   <img src="https://cdn.simpleicons.org/nestjs/E0234E" height="40" alt="nestjs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="postgresql logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" height="40" alt="firebase logo"  />
   <img width="12" />
@@ -54,3 +58,5 @@
   <img width="12" />
   <img src="https://cdn.simpleicons.org/javascript/F7DF1E" height="40" alt="javascript logo"  />
 </div>
+
+###
