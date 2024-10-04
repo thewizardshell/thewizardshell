@@ -1,7 +1,7 @@
 <br clear="both">
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=vicenteroa&locale=en&mode=weekly&theme=omni&hide_border=false&border_radius=5&date_format=%5BY.%5Dn.j&order=3" height="220" alt="streak graph"  />
+  <img src="https://streak-stats.demolab.com?user=vicenteroa&locale=en&mode=weekly&theme=rose_pine&hide_border=false&border_radius=5&date_format=%5BY.%5Dn.j&order=3" height="220" alt="streak graph"  />
 </div>
 
 ###
