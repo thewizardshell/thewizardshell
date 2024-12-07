@@ -25,7 +25,7 @@
 
 ###
 
-<p align="left">From Santiago, Chile 🇨🇱<br><br>🔭 I’m working as a full stack developer with experience in various technologies and frameworks.<br>📚 I'm currently studying in my final year at Universidad Andrés Bello and I love learning new things, especially related to technology and development.<br>⚡ In my free time I enjoy exploring new tech tools, working on personal coding projects, and constantly improving my skills.</p>
+<p align="left">From Santiago, Chile 🇨🇱<br><br>🔭 I’m currently leading my own project, Astral Sites , a development initiative focused on creating scalable and efficient web applications.<br>📚 Recently graduated in Software Engineering from Universidad Andrés Bello, I’m passionate about learning and implementing cutting-edge technologies.<br>⚡ In my free time, I enjoy exploring new tools, working on side projects, and enhancing my skills in software architecture and clean code principles.</p>
 
 ###
 
