@@ -15,7 +15,7 @@ jobs:
       - name: Get repositories where the user is a collaborator or owner
         id: get_repos
         run: |
-          repos=$(curl -H "Authorization: token ${{ secrets.GHP }}" \
+          repos=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
               "https://api.github.com/users/vicenteroa/repos?type=all" | jq -r '.[].full_name')
           echo "Repos: $repos"
           echo "$repos" > repos.txt  # Guardar en un archivo para depuración
@@ -26,7 +26,7 @@ jobs:
           repos=$(cat repos.txt)  # Leer desde el archivo
           issues=()
           for repo in $repos; do
-            issue_ids=$(curl -H "Authorization: token ${{ secrets.GHP }}" \
+            issue_ids=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
                           "https://api.github.com/repos/$repo/issues?state=open&assignee=vicenteroa" | \
                           jq -r '.[].id')
             echo "Issues for $repo: $issue_ids"  # Depuración
@@ -41,15 +41,28 @@ jobs:
           echo "Issues: ${issues[@]}"
           IFS=','; echo "${issues[*]}" > issues.txt  # Guardar en un archivo
 
+      - name: Get project columns
+        id: get_columns
+        run: |
+          project_id="PVT_kwHOBMPz284AuSzy"  # ID de tu Board Workspace
+          columns=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/projects/columns?project_id=$project_id" | jq -r '.[].id')
+          echo "Project Columns: $columns"
+          echo "$columns" > columns.txt  # Guardar en un archivo para depuración
+
       - name: Add issues to GitHub Project (Board Workspace)
         run: |
           project_id="PVT_kwHOBMPz284AuSzy"  # ID de tu Board Workspace
           issues=$(cat issues.txt)  # Leer desde el archivo
           IFS=',' read -r -a issue_array <<< "$issues"
+
+          # Asumiendo que quieres agregar a la primera columna disponible
+          column_id=$(head -n 1 columns.txt)
+
           for issue_id in "${issue_array[@]}"; do
             if [ -n "$issue_id" ]; then  # Verificar si issue_id no está vacío
-              response=$(curl -X POST -H "Authorization: token ${{ secrets.GHP }}" \
-                -d '{"content_type": "Issue", "content_id": '"$issue_id"', "project_id": '"$project_id"'}' \
+              response=$(curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                -d '{"content_type": "Issue", "content_id": '"$issue_id"', "project_id": '"$project_id"', "column_id": '"$column_id"'}' \
                 https://api.github.com/projects/columns/cards)
               echo "$response"  # Mostrar la respuesta para depuración
 
