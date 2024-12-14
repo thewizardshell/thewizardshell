@@ -18,29 +18,36 @@ jobs:
           repos=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
               "https://api.github.com/users/vicenteroa/repos?type=all" | jq -r '.[].full_name')
           echo "Repos: $repos"
-          echo "::set-output name=repos::$repos"
+          echo "$repos" > repos.txt  # Guardar en un archivo para depuración
 
       - name: Get issues assigned to user in all repos
         id: get_issues
         run: |
-          repos="${{ steps.get_repos.outputs.repos }}"
+          repos=$(cat repos.txt)  # Leer desde el archivo
           issues=()
           for repo in $repos; do
             issue_ids=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
                           "https://api.github.com/repos/$repo/issues?state=open&assignee=vicenteroa" | \
                           jq -r '.[].id')
+            echo "Issues for $repo: $issue_ids"  # Depuración
             issues+=($issue_ids)
           done
-          echo "Issues: ${issues[@]}"
-          echo "::set-output name=issues::$(IFS=,; echo "${issues[*]}")"
+          if [ ${#issues[@]} -eq 0 ]; then
+            echo "No issues found."
+          else
+            echo "Issues: ${issues[@]}"
+          fi
+          IFS=','; echo "${issues[*]}" > issues.txt  # Guardar en un archivo
 
       - name: Add issues to GitHub Project (Board Workspace)
         run: |
           project_id="PVT_kwHOBMPz284AuSzy"  # ID de tu Board Workspace
-          issues="${{ steps.get_issues.outputs.issues }}"
+          issues=$(cat issues.txt)  # Leer desde el archivo
           IFS=',' read -r -a issue_array <<< "$issues"
           for issue_id in "${issue_array[@]}"; do
-            curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-              -d '{"content_type": "Issue", "content_id": '"$issue_id"', "project_id": '"$project_id"'}' \
-              https://api.github.com/repos/vicenteroa/REPO_NAME/projects/columns/cards
+            if [ -n "$issue_id" ]; then  # Verificar si issue_id no está vacío
+              curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                -d '{"content_type": "Issue", "content_id": '"$issue_id"', "project_id": '"$project_id"'}' \
+                https://api.github.com/repos/vicenteroa/REPO_NAME/projects/columns/cards
+            fi
           done
