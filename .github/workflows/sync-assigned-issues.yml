@@ -15,7 +15,7 @@ jobs:
       - name: Get repositories where the user is a collaborator or owner
         id: get_repos
         run: |
-          repos=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          repos=$(curl -H "Authorization: token ${{ secrets.GHP }}" \
               "https://api.github.com/users/vicenteroa/repos?type=all" | jq -r '.[].full_name')
           echo "Repos: $repos"
           echo "$repos" > repos.txt  # Guardar en un archivo para depuración
@@ -26,7 +26,7 @@ jobs:
           repos=$(cat repos.txt)  # Leer desde el archivo
           issues=()
           for repo in $repos; do
-            issue_ids=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            issue_ids=$(curl -H "Authorization: token ${{ secrets.GHP }}" \
                           "https://api.github.com/repos/$repo/issues?state=open&assignee=vicenteroa" | \
                           jq -r '.[].id')
             echo "Issues for $repo: $issue_ids"  # Depuración
@@ -48,7 +48,7 @@ jobs:
           IFS=',' read -r -a issue_array <<< "$issues"
           for issue_id in "${issue_array[@]}"; do
             if [ -n "$issue_id" ]; then  # Verificar si issue_id no está vacío
-              response=$(curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              response=$(curl -X POST -H "Authorization: token ${{ secrets.GHP }}" \
                 -d '{"content_type": "Issue", "content_id": '"$issue_id"', "project_id": '"$project_id"'}' \
                 https://api.github.com/projects/columns/cards)
               echo "$response"  # Mostrar la respuesta para depuración
