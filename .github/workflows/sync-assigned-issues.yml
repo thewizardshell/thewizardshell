@@ -1,42 +1,44 @@
-name: Sync Assigned Issues to Board Workspace
+name: Sync Assigned Issues to Board
 
 on:
   schedule:
-    - cron: "0 * * * *" # Ejecutar cada hora
-  workflow_dispatch: # Ejecutar manualmente
+    - cron: "0 0 * * *" # Esto lo ejecutará todos los días a medianoche, ajusta el horario según sea necesario
+  workflow_dispatch:
 
 jobs:
-  sync_issues:
+  sync-issues:
     runs-on: ubuntu-latest
-    steps:
-      - name: Check out the repository
-        uses: actions/checkout@v3
 
-      - name: Get repositories where the user is a collaborator or owner
+    steps:
+      - name: Obtener repositorios
+        id: repos
         run: |
           repos=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-              "https://api.github.com/users/vicenteroa/repos?type=all" | jq -r '.[].full_name')
+            https://api.github.com/users/vicenteroa/repos?per_page=100 | jq -r '.[].full_name')
           echo "Repos: $repos"
-          echo "::set-output name=repos::$repos"
+          echo "repos=$repos" >> $GITHUB_ENV # Usamos un archivo de entorno para almacenar la variable
 
-      - name: Get issues assigned to user in all repos
+      - name: Listar Issues asignadas a mi usuario
+        id: issues
         run: |
-          repos="${{ steps.sync_issues.outputs.repos }}"
-          issues=()
-          for repo in $repos; do
-            issues+=($(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-                          "https://api.github.com/repos/$repo/issues?state=open&assignee=vicenteroa" | \
-                          jq -r '.[].id'))
+          issues=""
+          for repo in ${{ env.repos }}; do
+            repo_issues=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              https://api.github.com/repos/$repo/issues?state=open&assignee=vicenteroa)
+            if [ ! -z "$repo_issues" ]; then
+              issues="$issues $repo_issues"
+            fi
           done
           echo "Issues: $issues"
-          echo "::set-output name=issues::$issues"
+          echo "issues=$issues" >> $GITHUB_ENV
 
-      - name: Add issues to GitHub Project (Board Workspace)
+      - name: Agregar Issues al Board
         run: |
-          project_id="PVT_kwHOBMPz284AuSzy"  # ID de tu Board Workspace
-          issues="${{ steps.sync_issues.outputs.issues }}"
-          for issue_id in $issues; do
+          board_id="PVT_kwHOBMPz284AuSzy"  # Aquí debes usar tu ID de Board de trabajo
+          column_id="PVT_kwHOBMPz284AuSzj" # Aquí debes usar el ID de la columna en la que agregarás las issues
+          for issue in ${{ env.issues }}; do
+            issue_id=$(echo $issue | jq -r '.id')
             curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-              -d '{"content_type": "Issue", "content_id": '"$issue_id"', "project_id": '"$project_id"'}' \
-              https://api.github.com/repos/vicenteroa/REPO_NAME/projects/columns/cards
+              -d '{"contentId":"'"$issue_id"'", "contentType":"Issue"}' \
+              https://api.github.com/projects/columns/$column_id/cards
           done
