@@ -30,13 +30,15 @@ jobs:
                           "https://api.github.com/repos/$repo/issues?state=open&assignee=vicenteroa" | \
                           jq -r '.[].id')
             echo "Issues for $repo: $issue_ids"  # Depuración
-            issues+=($issue_ids)
+            if [ ! -z "$issue_ids" ]; then
+              issues+=($issue_ids)
+            fi
           done
           if [ ${#issues[@]} -eq 0 ]; then
             echo "No issues found."
-          else
-            echo "Issues: ${issues[@]}"
+            exit 0  # Salir si no hay issues encontradas
           fi
+          echo "Issues: ${issues[@]}"
           IFS=','; echo "${issues[*]}" > issues.txt  # Guardar en un archivo
 
       - name: Add issues to GitHub Project (Board Workspace)
@@ -46,8 +48,14 @@ jobs:
           IFS=',' read -r -a issue_array <<< "$issues"
           for issue_id in "${issue_array[@]}"; do
             if [ -n "$issue_id" ]; then  # Verificar si issue_id no está vacío
-              curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              response=$(curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
                 -d '{"content_type": "Issue", "content_id": '"$issue_id"', "project_id": '"$project_id"'}' \
-                https://api.github.com/repos/vicenteroa/REPO_NAME/projects/columns/cards
+                https://api.github.com/projects/columns/cards)
+              echo "$response"  # Mostrar la respuesta para depuración
+
+              # Verificar si hubo un error al agregar la tarjeta
+              if [[ $(echo "$response" | jq -r '.message') == "Not Found" ]]; then
+                echo "Error adding issue ID $issue_id to project. Please check the project ID and permissions."
+              fi
             fi
           done
