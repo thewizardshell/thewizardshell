@@ -48,7 +48,7 @@ Hi! I'm Vicente, a software developer from Santiago, Chile 🇨🇱
 #### Editor & Terminal
 - **Main Editor**: Neovim with LazyVim configuration
 - **Terminal**: WezTerm with custom configuration
-- **Terminal Multiplexer**: Zellij
+- **Terminal Multiplexer**: Tmux
 - **Shell**: ZSH
 
 #### Version Control & Tools
@@ -74,7 +74,7 @@ A development initiative focused on creating scalable and efficient web applicat
 A collection of my personal configurations for various tools and environments.
 - Neovim/LazyVim configuration
 - WezTerm setup
-- Zellij layouts
+- Zellij and tmux layouts
 - Shell scripts and aliases
 
 #### 🎨 [Portfolio](https://github.com/vicenteroa/portfolio)
