@@ -5,12 +5,11 @@
 ###
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vctroa)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@vlcho0_)
 [![Website](https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://www.vctroa.cl)
 
 </div>
 
-## 👨‍💻 Full Stack Developer | AI Enthusiast | Open Source Contributor
+## 👨‍💻 Full Stack Developer | AI Enthusiast 
 
 Hi! I'm Vicente, a software developer from Santiago, Chile 🇨🇱
 
@@ -34,7 +33,10 @@ Hi! I'm Vicente, a software developer from Santiago, Chile 🇨🇱
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
+
 
 ### 💻 Development Environment
 
@@ -43,7 +45,8 @@ Hi! I'm Vicente, a software developer from Santiago, Chile 🇨🇱
 
 ###
 
-<img src="https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white" alt="Neovim" width="120"/>
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+<img src="https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white" alt="Neovim" width="100"/>
 
 #### Editor & Terminal
 - **Main Editor**: Neovim with LazyVim configuration
