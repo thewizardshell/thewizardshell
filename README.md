@@ -18,6 +18,12 @@ Hi! I'm Vicente, a software developer from Santiago, Chile 🇨🇱
 - ⚡ In my free time, I explore new tools and work on side projects
 - 🤝 Contributor to LazyVim <img src="https://forge.chapril.org/repo-avatars/847-609021d08e24ab104bffb5023f5c5362" alt="lazyvim" width="20" />
 
+### 📚 Learning
+
+- ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)
+- ![Remix](https://img.shields.io/badge/remix-%23000.svg?style=for-the-badge&logo=remix&logoColor=white)
+- <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=flat&logo=amazon-web-services&logoColor=white" />
+  
 ### 🛠️ Tech Stack
 
 #### Frontend & Backend
