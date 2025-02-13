@@ -12,7 +12,7 @@ Hi! I'm Vicente, a software developer from Santiago, Chile 🇨🇱
 
 ### 🚀 About Me
 
-- 🔭 Currently leading my own project, **Astral Sites**, focused on creating scalable and efficient web applications
+- 🔭 Currently leading my own project, **Azetheral Technology**, focused on creating scalable and efficient web applications
 - 🎓 Recently graduated in Software Engineering from Universidad Andrés Bello
 - 🌱 Passionate about learning and implementing cutting-edge technologies
 - ⚡ In my free time, I explore new tools and work on side projects
@@ -95,7 +95,7 @@ Personal portfolio showcasing my projects and skills.
 ### 📊 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vicenteroa&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=thewizardshell&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
 </div>
 
 ---
