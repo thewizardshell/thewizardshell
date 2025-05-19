@@ -8,22 +8,14 @@
 
 </div>
 
-### 🌌 Full Stack Developer | Machine Learning and Data Engineer  
+### 🌌 Software Developer 
 
 ---
 
 ### 📜 About me
 
-- 🎓 Recently graduated in Software Engineering from Universidad Andrés Bello
 - 🌱 Passionate about learning and implementing cutting-edge technologies
 - ⚡ In my free time, I explore new tools and work on side projects
-- 🤝 Contributor to LazyVim <img src="https://forge.chapril.org/repo-avatars/847-609021d08e24ab104bffb5023f5c5362" alt="lazyvim" width="20" />
----
-
-### 📖 Learning
-
-![Remix](https://img.shields.io/badge/remix-%23000.svg?style=for-the-badge&logo=remix&logoColor=white&color=8cc4b0)
-![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-web-services&logoColor=white&color=95c5d9)
 ---
 
 ### 🧰 Stacks
@@ -35,9 +27,11 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white&color=8fb3d0)
 
 #### ☁️ Database & Cloud
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white&color=9fc3d1)
+![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-web-services&logoColor=white&color=95c5d9)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black&color=ffd79a)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white&color=9fc3d1)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white&color=b5e6d3)
+
 
 ---
 
