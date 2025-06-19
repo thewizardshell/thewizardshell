@@ -8,30 +8,30 @@
 
 </div>
 
-### 🌌 Software Developer 
+###  Software Developer 
 
 ---
-
 ### 📜 About me
 
-- 🌱 Passionate about learning and implementing cutting-edge technologies
-- ⚡ In my free time, I explore new tools and work on side projects
+- 🌱 Passionate about learning and implementing cutting-edge technologies  
+- ⚡ In my free time, I explore new tools and work on side projects  
+
 ---
 
 ### 🧰 Stacks
 
 #### ✨ Frontend & Backend
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white&color=d4a5a5)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white&color=e8b9bf)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB&color=a8d8ea)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white&color=8fb3d0)
+![Next.js](https://img.shields.io/badge/Next.js-Fullstack-cab7a2?style=for-the-badge&logo=next.js&logoColor=black)
+![NestJS](https://img.shields.io/badge/NestJS-API-c89f9c?style=for-the-badge&logo=nestjs&logoColor=white)
+![React](https://img.shields.io/badge/React-UI%20Library-d5c4b3?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-Static%20Typing-b9a186?style=for-the-badge&logo=typescript&logoColor=white)
+![Go](https://img.shields.io/badge/Go-CLI%20%26%20Backend-c7a38a?style=for-the-badge&logo=go&logoColor=white)
 
 #### ☁️ Database & Cloud
-![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-web-services&logoColor=white&color=95c5d9)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black&color=ffd79a)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white&color=9fc3d1)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white&color=b5e6d3)
-
+![AWS](https://img.shields.io/badge/AWS-Cloud-d3bfae?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-Realtime%20DB-edc9af?style=for-the-badge&logo=firebase&logoColor=black)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-SQL-dbbea9?style=for-the-badge&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-Edge%20DB-c4b6a6?style=for-the-badge&logo=supabase&logoColor=white)
 
 ---
 
@@ -40,3 +40,4 @@
   
   <p>💡 <i>The best way to predict the future is to create it.</i></p>
 </div>
+
