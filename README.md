@@ -3,7 +3,11 @@
 #  **Vicente Roa** 
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=thewizardshell&show_icons=true&theme=ayu-mirage" alt="Estadísticas Mágicas" style="border-radius: 15px; box-shadow: 0 0 15px #8ec5d6;" />
+  <img 
+    src="https://github-readme-stats.vercel.app/api?username=thewizardshell&show_icons=true&theme=calm&bg_color=ede0d4&title_color=7f5539&text_color=5e503f&icon_color=9c6644" 
+    alt="Estadísticas Mágicas" 
+    style="border-radius: 15px; box-shadow: 0 0 15px #b08968;" 
+  />
 </div>
 
 </div>
